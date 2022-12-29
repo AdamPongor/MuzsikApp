@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dip">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/btnGrid"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/instrument"/>
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="@string/strings"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/etDescription"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/ibBackSpace"
+                tools:text="reeee"/>
+
+            <ImageButton
+                android:id="@+id/ibBackSpace"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_backspace_24" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/btnGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:columnCount="3"
+        android:paddingTop="10dp"
+        android:paddingLeft="1dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btnNoteA"
+            style="@style/NoteSelector"
+            android:text="A"/>
+        <Button
+            android:id="@+id/btnNoteAx"
+            style="@style/NoteSelector"
+            android:text="A#"/>
+        <Button
+            android:id="@+id/btnNoteB"
+            style="@style/NoteSelector"
+            android:text="B"/>
+        <Button
+            android:id="@+id/btnNoteC"
+            style="@style/NoteSelector"
+            android:text="C"/>
+        <Button
+            android:id="@+id/btnNoteCx"
+            style="@style/NoteSelector"
+            android:text="C#"/>
+        <Button
+            android:id="@+id/btnNoteD"
+            style="@style/NoteSelector"
+            android:text="D"/>
+        <Button
+            android:id="@+id/btnNoteDx"
+            style="@style/NoteSelector"
+            android:text="D#"/>
+        <Button
+            android:id="@+id/btnNoteE"
+            style="@style/NoteSelector"
+            android:text="E"/>
+        <Button
+            android:id="@+id/btnNoteF"
+            style="@style/NoteSelector"
+            android:text="F"/>
+        <Button
+            android:id="@+id/btnNoteFx"
+            style="@style/NoteSelector"
+            android:text="F#"/>
+        <Button
+            android:id="@+id/btnNoteG"
+            style="@style/NoteSelector"
+            android:text="G"/>
+        <Button
+            android:id="@+id/btnNoteGx"
+            style="@style/NoteSelector"
+            android:text="G#"/>
+    </GridLayout>
+</RelativeLayout>

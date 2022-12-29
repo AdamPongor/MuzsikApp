@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MuzsikApp</string>
+
+    <string name="name">Name</string>
+    <string name="strings">Strings</string>
+    <string name="instrument">Instrument</string>
+    <string name="new_tuning">New Tuning</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="rosewood">rosewood</string>
+    <string name="theme">Theme</string>
+    <string name="chords">Chords</string>
+    <string name="delete">Clear</string>
+    <string name="select">Select</string>
+    <string name="scale">Scale</string>
+    <string name="tonic_note">Root note:</string>
+    <string name="mode">Mode</string>
+
+    <string-array name="category_items">
+        <item>Guitar</item>
+        <item>Bass</item>
+        <item>Piano</item>
+    </string-array>
+
+    <string-array name="notes">
+        <item>A</item>
+        <item>A#</item>
+        <item>B</item>
+        <item>C</item>
+        <item>C#</item>
+        <item>D</item>
+        <item>D#</item>
+        <item>E</item>
+        <item>F</item>
+        <item>F#</item>
+        <item>G</item>
+        <item>G#</item>
+    </string-array>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="1dp"
+    android:paddingBottom="1dp">
+
+    <TextView
+        android:id="@+id/tvScaleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="?attr/colorOnSecondary"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        tools:text="A Major"/>
+
+    <LinearLayout
+        android:id="@+id/llChords"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7"
+        tools:context=".activity.ChordsActivity">
+
+    </LinearLayout>
+
+</LinearLayout>

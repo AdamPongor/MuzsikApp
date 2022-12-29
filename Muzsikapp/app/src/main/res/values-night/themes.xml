@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MuzsikApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/DarkMuzsikek</item>
+        <item name="colorPrimaryVariant">@color/DarkerMukzsikek</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/DarkMuzsikek</item>
+        <item name="colorSecondaryVariant">@color/DarkerMukzsikek</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="FretboardWood">@drawable/rozsafa</item>
+        <item name="MarkerDot">@drawable/feherpont</item>
+        <item name="MarkerDoubleDot">@drawable/feherduplapont</item>
+    </style>
+</resources>
