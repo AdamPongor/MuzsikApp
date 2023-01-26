@@ -15,7 +15,19 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorSecondary" />
+            android:background="?attr/colorSecondary">
+
+            <ImageButton
+                app:tint="?attr/colorOnSecondary"
+                android:id="@+id/btnPreferences"
+                android:layout_width="50dp"
+                android:layout_height="48dp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:scaleType="fitXY"
+                android:layout_gravity="right"/>
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 

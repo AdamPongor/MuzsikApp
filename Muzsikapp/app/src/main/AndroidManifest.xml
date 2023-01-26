@@ -14,17 +14,20 @@
         android:theme="@style/Theme.MuzsikApp"
         tools:targetApi="31">
         <activity
-            android:name=".activity.ChordsActivity"
-            android:screenOrientation="landscape"
+            android:name=".activity.PreferencesActivity"
             android:exported="false" />
+        <activity
+            android:name=".activity.ChordsActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.FretBoardActivity"
-            android:screenOrientation="landscape"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".activity.MainActivity"
-            android:screenOrientation="landscape"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

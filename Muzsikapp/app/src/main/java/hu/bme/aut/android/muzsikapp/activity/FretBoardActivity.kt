@@ -89,13 +89,6 @@ class FretBoardActivity : AppCompatActivity(), ScaleSelectorDialogFragment.Scale
                 toast.show()
             }
         }
-
-        binding.themeButton.setOnClickListener {
-            when (this@FretBoardActivity.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)) {
-                Configuration.UI_MODE_NIGHT_YES -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
-                Configuration.UI_MODE_NIGHT_NO -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
-            }
-        }
     }
 
     private fun initRecyclerView() {

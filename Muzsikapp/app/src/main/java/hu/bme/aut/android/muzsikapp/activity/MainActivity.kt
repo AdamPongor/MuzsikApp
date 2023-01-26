@@ -33,6 +33,12 @@ class MainActivity : AppCompatActivity(), TuningAdapter.TuningClickListener, New
             )
         }
 
+        binding.btnPreferences.setOnClickListener {
+            val showPreferencesIntent = Intent()
+            showPreferencesIntent.setClass(this@MainActivity, PreferencesActivity::class.java)
+            startActivity(showPreferencesIntent)
+        }
+
         initRecyclerView()
     }
 

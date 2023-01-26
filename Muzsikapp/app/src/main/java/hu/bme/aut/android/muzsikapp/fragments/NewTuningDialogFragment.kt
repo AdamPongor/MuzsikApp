@@ -49,6 +49,11 @@ class NewTuningDialogFragment : DialogFragment() {
             strings.add("A#")
             RefreshText()
         }
+        binding.btnNoteAx.setOnLongClickListener {
+            strings.add("Bb")
+            RefreshText()
+            true
+        }
         binding.btnNoteB.setOnClickListener {
             strings.add("B")
             RefreshText()
@@ -61,6 +66,11 @@ class NewTuningDialogFragment : DialogFragment() {
             strings.add("C#")
             RefreshText()
         }
+        binding.btnNoteCx.setOnLongClickListener {
+            strings.add("Db")
+            RefreshText()
+            true
+        }
         binding.btnNoteD.setOnClickListener {
             strings.add("D")
             RefreshText()
@@ -68,6 +78,11 @@ class NewTuningDialogFragment : DialogFragment() {
         binding.btnNoteDx.setOnClickListener {
             strings.add("D#")
             RefreshText()
+        }
+        binding.btnNoteDx.setOnLongClickListener {
+            strings.add("Eb")
+            RefreshText()
+            true
         }
         binding.btnNoteE.setOnClickListener {
             strings.add("E")
@@ -81,6 +96,11 @@ class NewTuningDialogFragment : DialogFragment() {
             strings.add("F#")
             RefreshText()
         }
+        binding.btnNoteFx.setOnLongClickListener {
+            strings.add("Gb")
+            RefreshText()
+            true
+        }
         binding.btnNoteG.setOnClickListener {
             strings.add("G")
             RefreshText()
@@ -89,7 +109,11 @@ class NewTuningDialogFragment : DialogFragment() {
             strings.add("G#")
             RefreshText()
         }
-
+        binding.btnNoteGx.setOnLongClickListener {
+            strings.add("Ab")
+            RefreshText()
+            true
+        }
 
         binding.ibBackSpace.setOnClickListener {
             if(!strings.isEmpty()){
@@ -111,7 +135,11 @@ class NewTuningDialogFragment : DialogFragment() {
                 .create()
         } else {
             binding.etName.setText(arguments?.getString("name"))
-            binding.etDescription.text = arguments?.getString("strings")
+            val ree = arguments?.getString("strings").toString().split(" ")
+            for (s: String in ree){
+                strings.add(s)
+            }
+            RefreshText()
             binding.spCategory.setSelection(arguments?.getInt("instrument")!!)
             return AlertDialog.Builder(requireContext())
                 .setTitle("Edit tuning")
